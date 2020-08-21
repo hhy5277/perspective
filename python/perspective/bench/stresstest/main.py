@@ -8,14 +8,13 @@
 import os
 import argparse
 import logging
-import time
 import asyncio
 
 from datetime import datetime
 
 
 HERE = os.path.abspath(os.path.dirname(__file__))
-CLIENT_PATH = os.path.join(HERE, "client_runner.py")
+CLIENT_PATH = os.path.join(HERE, "client", "client_runner.py")
 
 PARSER = argparse.ArgumentParser(description="Stress testing for Perspective's websocket interface.")
 
